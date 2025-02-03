@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('ja2.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            text-align: center;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3);
+            z-index: -1;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            width: 90%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .logo-image {
+            width: 250px;
+            height: auto;
+            margin-bottom: 30px;
+            border-radius: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .button-container a {
+            display: block;
+            background-color: white;
+            color: #0045AC;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 12px;
+            text-decoration: none;
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #f0f0f0;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <img src="JALogo.png" alt="Logo da Empresa" class="logo-image">
+
+        <div class="button-container">
+            <a href="https://drive.google.com/file/d/1O_glM0_oOaQ-033NEn0pbNw_6cW_T_G7/view?usp=drive_link" download>Manual fixo</a>
+            <a href="https://drive.google.com/file/d/13hoIlincbokEQD-Uq9_YqM5F-LnTD5NV/view?usp=drive_link" download>Manual </a>
+            <a href="https://drive.google.com/file/d/1JTWnrW5HltC8xTGaa2PwI8DRKgCCKM72/view?usp=drive_link" download>Baixar Documento 3</a>
+            <a href="https://drive.google.com/file/d/1qi7rAP0agIU3ioo3PLlUYmEH7_whHKzp/view?usp=drive_link" download>Baixar Documento 4</a>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 - J.A Estofados
+        </div>
+    </div>
+
+</body>
+
+</html>
